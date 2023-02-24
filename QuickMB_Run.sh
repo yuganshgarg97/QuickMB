@@ -2,10 +2,10 @@ echo " Starting Environment Setup"
 cd code/
 chmod +x *.sh
 ./setup.sh
-sleep
+sleep 10
+mkdir ../results/
 echo "Test Started "
 ./hardware_info.sh
-mkdir ../results/
 sleep 10
 echo "Process-Name,Time-Taken,Avg-CPU-usage,Agv-Memory-usage,Avg-Swap-usage" >> ../results/Matrix.csv
 mkdir ../results/Read_Write_stats/
