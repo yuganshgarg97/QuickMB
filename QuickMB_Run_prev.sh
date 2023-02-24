@@ -1,10 +1,10 @@
 cd code/
 chmod +x *.sh
 ./setup.sh
+mkdir ../results/
 ./hardware_info.sh
 echo "Test Started "
- mkdir ../results/
-#sleep 10
+ sleep 10
 echo "Process-Name,Time-Taken,Avg-CPU-usage,Agv-Memory-usage,Avg-Swap-usage" >> ../results/Matrix.csv
 mkdir ../results/Read_Write_stats/
 sar -u 1 >> ../results/Read_Write_stats/cpu_data.csv |sar -r 1 >> ../results/Read_Write_stats/memory_data.csv | sar -S 1 >> ../results/Read_Write_stats/swap_data.csv | python Read-Write_test.py
