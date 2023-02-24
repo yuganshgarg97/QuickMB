@@ -14,7 +14,7 @@ for row in csvreader:
     rows.append(r.split())
 sumi=0
 for i in range(len(rows)):
-    sumi+=float(rows[i][5])
+    sumi+=float(rows[i][4])
 average = sumi/len(rows)
 print("average load on memory = ", average)
 file.close()
