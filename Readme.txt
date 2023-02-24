@@ -5,8 +5,8 @@
 #Pre-requisit : Debian Based OS including Ubuntu, Debian or any other
 # Run the following commands**
 # ./QuickMB_Run.sh
-#The will download multiple python dependecies during setup
+#The command will download multiple python dependecies and other tools during setup
 #It will create multiple Results file.
+#In case of Ubuntu 18.04 or earlier or any other similar version, use the ./QuickMB_Run_prev.sh command.
 #For Further Details read Quick-MB_Description.pdf
-#Results will be generated in form of tar files containing all the details of each every process
-#the title of the tar file will be based on Day, followed by date, month, year and time
+#Results will be generated in the results/ directory.
