@@ -17,7 +17,7 @@ sumi=0
 for i in range(len(rows)):
     ##rows[i][5]=rows[i][5].replace("'","")
     ##rows[i][5]=rows[i][5].replace("]","")
-    sumi+=float(rows[i][3])
+    sumi+=float(rows[i][2])
 average = sumi/float(len(rows))
 print("average load on processor:",average)
 file.close()
