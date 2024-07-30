@@ -10,7 +10,7 @@ else:
     Start = time.time()
     dummy = os.popen("wget --no-check-certificate https://releases.ubuntu.com/focal/ubuntu-20.04.6-live-server-amd64.iso").read()
     End = time.time()
-    size = os.path.getsize("https://releases.ubuntu.com/focal/ubuntu-20.04.6-live-server-amd64.iso")
+    size = os.path.getsize("ubuntu-20.04.6-live-server-amd64.iso")
     s= size/(1024**3)
     print("The Process to Download"+str(s)+" GB Ended at ", time.ctime())
     print(" Time taken to Download "+ str(s)+ "GB Data ", End - Start," Seconds")
