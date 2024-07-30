@@ -8,7 +8,7 @@ if isExist:
 else:
     print("The Process to Download 1.2 GB Began at ", time.ctime())
     Start = time.time()
-    dummy = os.popen("wget --no-check-certificate https://www.releases.ubuntu.com/20.04/ubuntu-20.04.5-live-server-amd64.iso").read()
+    dummy = os.popen("wget --no-check-certificate https://ubuntu.com/download/server/thank-you?version=24.04&architecture=amd64&lts=true").read()
     End = time.time()
     size = os.path.getsize("ubuntu-20.04.5-live-server-amd64.iso")
     s= size/(1024**3)
