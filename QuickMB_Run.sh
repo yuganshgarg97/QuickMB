@@ -153,3 +153,4 @@ sleep 5
 python Group_Data.py
 echo " All Test Completed Successfully"
 echo " all data is in results folder"
+./complete.sh
